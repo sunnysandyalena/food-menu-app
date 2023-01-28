@@ -8,7 +8,7 @@ const Dish = ({dish}) => {
     const [quantity, setQuantity] = useState(1);
 
     return (
-        <div className="container">
+        <div key={dish.id} className="container">
             <img src={`./${dish.img}.webp`} alt='{dish.name}'/>
             <h2>{dish.name}</h2>
             <h3>${dish.price}</h3>
